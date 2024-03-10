@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="calculator.CSS">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div>
+                    <h1>Calculator</h1>
+                </div>
+                <div class="userInp">
+                    <input type="text" name="userInp" id="">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="userInp.value = ''" class="shadow">
+                    <input type="button" value="&#9003;" onclick="userInp.value = userInp.value.toString().slice(0,-1)" class="shadow">
+                    <input type="button" value="." onclick="userInp.value += '.'" class="shadow">
+                    <input type="button" value="/" onclick="userInp.value += '/'" class="yellow">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="userInp.value += '7'">
+                    <input type="button" value="8" onclick="userInp.value += '8'">
+                    <input type="button" value="9" onclick="userInp.value += '9'">
+                    <input type="button" value="*" onclick="userInp.value += '*'" class="yellow">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="userInp.value += '4'">
+                    <input type="button" value="5" onclick="userInp.value += '5'">
+                    <input type="button" value="6" onclick="userInp.value += '6'">
+                    <input type="button" value="-"onclick="userInp.value += '-'" class="yellow">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="userInp.value += '1'">
+                    <input type="button" value="2" onclick="userInp.value += '2'">
+                    <input type="button" value="3" onclick="userInp.value += '3'">
+                    <input type="button" value="+" onclick="userInp.value += '+'" class="yellow">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="userInp.value += '00'">
+                    <input type="button" value="0" onclick="userInp.value += '0'">
+                    <input type="button" value="=" onclick="userInp.value = eval(userInp.value)" class="equal yellow">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
